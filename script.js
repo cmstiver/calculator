@@ -31,8 +31,11 @@ function operate() {
     } else if (operator === '+') {
         answer = add(displayValue, displayValue2)
     }
-    display.textContent = answer
-    displayValue = answer
+    if (toString(answer).length > 10) {
+        alert('Too long. Use a real calculator for that.')
+    }
+    display.textContent = round(answer)
+    displayValue = round(answer)
     displayValue2 = ''
 }
 
@@ -48,7 +51,7 @@ function displayNum() {
 
 function decimial() {
     if (!operator == false) {
-        if (displayValue.includes('.')) {
+        if (displayValue2.includes('.')) {
             return
         }
         displayValue2 += this.textContent
@@ -125,6 +128,10 @@ function percent() {
         displayValue = perc
         display.textContent = displayValue
     }
+}
+
+function round(num) {
+    return Math.round( num * 1000 + Number.EPSILON ) / 1000
 }
 
 let displayValue = ''
