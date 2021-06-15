@@ -32,9 +32,6 @@ function operate() {
     } else if (operator === '+') {
         answer = add(displayValue, displayValue2)
     }
-    if (toString(answer).length > 10) {
-        alert('Too long. Use a real calculator for that.')
-    }
     display.textContent = round(answer)
     displayValue = round(answer)
     displayValue2 = ''
@@ -132,7 +129,7 @@ function percent() {
 }
 
 function round(num) {
-    return Math.round( num * 1000 + Number.EPSILON ) / 1000
+    return Math.round( num * 1000000 + Number.EPSILON ) / 1000000
 }
 
 let displayValue = ''
