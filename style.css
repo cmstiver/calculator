@@ -21,7 +21,7 @@
     grid-template-columns: 4em 4em 4em 4em ;
     margin-top: 20px;
 }
-.button {
+button {
     padding: 15px;
     margin: 3px;
     border: 1px solid black;
@@ -30,4 +30,7 @@
 }
 body {
     background-color: darkgrey;
+}
+button:active {     
+    background-color:rgb(195, 133, 110);    
 }
