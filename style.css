@@ -1,0 +1,33 @@
+#container {
+    margin: auto;
+    margin-top: 200px;
+    width: 16em;
+    border: 3px solid black;
+    padding: 10px;
+    background-color: cadetblue;
+    border-radius: 5%;
+}
+#display {
+    margin: auto;
+    margin-top: 5px;
+    border: 3px solid black;
+    padding: 3px;
+    text-align: right;
+    font-size: 3em;
+    background-color: rgb(143, 185, 187);
+}
+#buttons {
+    display: grid;
+    grid-template-columns: 4em 4em 4em 4em ;
+    margin-top: 20px;
+}
+.button {
+    padding: 15px;
+    margin: 3px;
+    border: 1px solid black;
+    border-radius: 5%;
+    background-color: rgb(250, 165, 134);
+}
+body {
+    background-color: darkgrey;
+}
