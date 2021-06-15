@@ -77,6 +77,7 @@ function clear() {
     displayValue2 = ''
     operator = false
     display.textContent = 0
+    document.querySelector('body').style.backgroundColor = 'darkgrey'
 }
 
 function del() {
