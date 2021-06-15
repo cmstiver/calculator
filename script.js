@@ -22,6 +22,7 @@ function operate() {
         if (displayValue2 === '0') {
             display.textContent = 'ṫ̸͎̓͂̓̀̎͝h̸̠̭̣̭̻͚̳̃̓̈́͛̕e̷͓̍͛͂͆͝ ̵̛͔͇̱͚͐͛̍̓͛̚u̴͈̯̠̫̤̮̰̱͕͕͌̒͆̿̒́̂̄̑̚͜n̵̨̝͕̘̬̲̘̦̼̤̠͓͇̮̦̈́̔̚į̶̧̛̘̭̗̫̰̼̞̌̀̌͑̐̔̿̋v̵̨̪̤̬̙̰̬͉̜̑̅̂̾̕ͅe̴͚̝̼̎̏̈̾͆̉͝r̴̲͍̜̫͔͔̰͇̞̹̟͚͙̒̈́̂̏͊̈́̏̄̉s̷̢̝̻̟͚̘̪͎̖̫̽́ͅĕ̶̡̧̢̯ ̷̱͚̣͉̬̩͌̾͂͑c̴̢̡̨̦̠̪̘̗͓̮̱̱͉͗̄̑̊̉̍̽͐̄̆̽̉́͝͝ͅo̷̡̘͍̐͋͒̔̌̈̇̈̋̌̋̃̌̓͠ļ̵̨̛̝͖͔̞͇͔̆̑̃͐̔̃̈́̄̂̌̉l̸̗͚̞̱̼̞͍͚͔͖͐ͅä̸̛̱̮̥́̓̈́́̉̓̅͠p̷̢̡̘̘̹̦̝͉̩̰̕s̵̢̨̧͇̦̤̳̖͍̖̜͚̔̆̊̀̍̔̅̃̃͆̅͂̅͜͝͠é̵̢̠̙̦̱͍̪̯̹̭̜̌́̈́̆s̵̡̯͇̲̝̠͝'
             document.querySelector('body').style.backgroundColor = 'red'
+            return
         } else {
         answer = divide(displayValue, displayValue2)}
     } else if (operator === 'x') {
