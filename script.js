@@ -19,7 +19,7 @@ function operate() {
         return
     }
     if (operator === '/') {
-        if (displayValue2 === '0') {
+        if (displayValue2 == '0') {
             display.textContent = 'ṫ̸͎̓͂̓̀̎͝h̸̠̭̣̭̻͚̳̃̓̈́͛̕e̷͓̍͛͂͆͝ ̵̛͔͇̱͚͐͛̍̓͛̚u̴͈̯̠̫̤̮̰̱͕͕͌̒͆̿̒́̂̄̑̚͜n̵̨̝͕̘̬̲̘̦̼̤̠͓͇̮̦̈́̔̚į̶̧̛̘̭̗̫̰̼̞̌̀̌͑̐̔̿̋v̵̨̪̤̬̙̰̬͉̜̑̅̂̾̕ͅe̴͚̝̼̎̏̈̾͆̉͝r̴̲͍̜̫͔͔̰͇̞̹̟͚͙̒̈́̂̏͊̈́̏̄̉s̷̢̝̻̟͚̘̪͎̖̫̽́ͅĕ̶̡̧̢̯ ̷̱͚̣͉̬̩͌̾͂͑c̴̢̡̨̦̠̪̘̗͓̮̱̱͉͗̄̑̊̉̍̽͐̄̆̽̉́͝͝ͅo̷̡̘͍̐͋͒̔̌̈̇̈̋̌̋̃̌̓͠ļ̵̨̛̝͖͔̞͇͔̆̑̃͐̔̃̈́̄̂̌̉l̸̗͚̞̱̼̞͍͚͔͖͐ͅä̸̛̱̮̥́̓̈́́̉̓̅͠p̷̢̡̘̘̹̦̝͉̩̰̕s̵̢̨̧͇̦̤̳̖͍̖̜͚̔̆̊̀̍̔̅̃̃͆̅͂̅͜͝͠é̵̢̠̙̦̱͍̪̯̹̭̜̌́̈́̆s̵̡̯͇̲̝̠͝'
             document.querySelector('body').style.backgroundColor = 'red'
             return
@@ -32,6 +32,7 @@ function operate() {
     } else if (operator === '+') {
         answer = add(displayValue, displayValue2)
     }
+    operator = false
     display.textContent = round(answer)
     displayValue = round(answer)
     displayValue2 = ''
@@ -116,13 +117,13 @@ function negative() {
 }
 
 function percent() {
-    if (!operator == false) {
-        perc = displayValue2 / 100
+    if (!(operator == false)) {
+        let perc = displayValue2 / 100
         displayValue2 = perc
         displayValue2
         display.textContent = displayValue2
     } else if (operator == false) {
-        perc = displayValue / 100
+        let perc = displayValue / 100
         displayValue = perc
         display.textContent = displayValue
     }
